@@ -1,0 +1,16 @@
+{
+  "name": "MeApp Phone — offline",
+  "short_name": "MeApp",
+  "description": "Ghi chú, việc và thư viện HTML dùng offline; đồng bộ khi có mạng.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090e1c",
+  "theme_color": "#8792ff",
+  "lang": "vi",
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

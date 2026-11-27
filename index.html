@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>MeApp Phone</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div>
+        <div class="brand">📱 MeApp <span class="tiny muted">offline-first</span></div>
+        <div class="tiny faint" id="clock"></div>
+      </div>
+      <span class="net-badge" id="netBadge">● Offline</span>
+    </header>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-view="home">Tổng quan</button>
+      <button class="tab" data-view="notes">Ghi chú</button>
+      <button class="tab" data-view="tasks">Việc</button>
+      <button class="tab" data-view="library">Thư viện</button>
+      <button class="tab" data-view="sync">Đồng bộ</button>
+    </nav>
+
+    <main id="view"></main>
+  </div>
+  <div id="toasts" class="toast-stack"></div>
+  <script src="./sync.js"></script>
+  <script src="./phone.js"></script>
+</body>
+</html>
